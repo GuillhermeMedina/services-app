@@ -1,0 +1,41 @@
+{
+  "name": "api-services",
+  "vendor": "modular",
+  "version": "0.0.2",
+  "title": "api service",
+  "description": "Reference app for the Backend Course",
+  "builders": {
+    "node": "6.x"
+  },
+  "routes": {
+    "new-order": {
+      "path": "/orders",
+      "public": false,
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": [
+            "post"
+          ],
+          "principals": [
+            "vrn:apps:guilherme:lojabuettner:app/guilherme.lojabuettner.myvtex.com"
+          ]
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "prereleasy": "bash lint.sh"
+  },
+  "credentialType": "absolute",
+  "policies": [
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "lojabuettner.vtexcommercestable.com.br",
+        "path": "/api/oms/pvt/orders/*"
+      }
+    }
+  ],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}
