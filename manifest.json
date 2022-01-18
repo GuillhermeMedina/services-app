@@ -1,6 +1,6 @@
 {
-  "name": "api-services",
-  "vendor": "modular",
+  "name": "countdown",
+  "vendor": "vtex",
   "version": "0.0.2",
   "title": "api service",
   "description": "Reference app for the Backend Course",

@@ -13,7 +13,7 @@
     },
     "routes": {
         "analytics": {
-            "path": "/_v/app/analytics/realTime",
+            "path": "/_v/app/analytics/realTime/:orderID",
             "public": true
         }
     }

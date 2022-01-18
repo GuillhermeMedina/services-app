@@ -1,5 +1,5 @@
 {
-    "name": "api-services",
+    "name": "countdown",
     "private": true,
     "license": "UNLICENSED",
     "scripts": {
