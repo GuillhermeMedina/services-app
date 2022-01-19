@@ -36,4 +36,3 @@ export default new Service<Clients, State, ParamsContext>({
     
   },
 })
-
